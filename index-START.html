@@ -35,12 +35,16 @@
 
     // So, how do we fix this? We take a copy instead!
     const team2 = players.slice();
+    const team3 = [].concat(players);
 
     // one way
 
     // or create a new array and concat the old one in
 
     // or use the new ES6 Spread
+    const team4 = [...players]
+
+    const team5 = Array.from(players);
 
     // now when we update it, the original one isn't changed
 
