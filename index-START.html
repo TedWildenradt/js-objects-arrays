@@ -78,6 +78,8 @@
     const dev = Object.assign({},bob);
     dev.name = 'joe'
 
+    // Works but not efficient:
+    const dev3 = JSON.parse(JSON.stringify(bob));
 
   </script>
 
